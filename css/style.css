@@ -6,6 +6,7 @@ html {
 /* Set the margin to 0 to make sure the page stretches all the way to the edge of the browser window. */
 body {
   margin: 0;
+  background-color: #222222;
 }
 
 /* Removed min-width because some phones are narrower than 500px */
@@ -22,13 +23,17 @@ header {
   color: #fff;
   min-height: 100vh;
   display: flex;
+  background-image: url('../images/header.jpg');
+background-size: cover;
+background-position: center center;
+text-align: center;
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
   grid-gap: 20px;
-  margin-top: 44px;
+  margin: 44px 30px;
 
   justify-items: center;
   justify-content: center;
@@ -95,7 +100,7 @@ img {
 }
 
 .myButton:hover {
-	background-color:#e69708;
+	background-color: black;
 }
 
 .myButton:active {
@@ -106,6 +111,7 @@ img {
 .recipe {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
+  background-color: white;
 }
 
 .a {
@@ -167,9 +173,13 @@ footer {
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
+    margin: 44px auto;
   }
   .description {
     font-size:18px
+  }
+  img {
+    height: 25vh;
   }
 }
 a {
