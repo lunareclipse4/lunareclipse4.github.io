@@ -57,7 +57,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
-  color: white;
+  color: black;
   padding: 10px 20px 0px 20px;
 }
 
@@ -113,7 +113,7 @@ img {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
   width: 100%;
   background-color: white;
-  background-image: url('../images/header.jpg')
+
 
 
 }
@@ -136,7 +136,7 @@ img {
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
-  color: #D2cfd2;
+  color: black;
   padding: 10px 0px 10px 10px;
   border-top: 1px solid #4a4a4a;
 }
@@ -156,7 +156,9 @@ footer {
     display: flex;
     align-content: center;
     padding: 10px 20px;
-    color: black;
+    color: white;
+      background-image: url('../images/project.jpg');
+
 
 }
 
