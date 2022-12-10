@@ -44,7 +44,7 @@ main {
 
 /* Added h1 definition. Notice the font size calculation. This calc sets the font size at AT LEAST 1.93em, then adds 2% of the view width per character (approx.) */
 h1 {
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   font-size: calc(1em + 3vw);
   padding-bottom: .67em;
   border-bottom: 1px solid;
@@ -52,12 +52,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lora', serif;
-  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
   font-weight: 600;
+
   letter-spacing: 0.3px;
-  text-align: left;
-  color: black;
+  text-align: center;
+  color: #bb6599;
   padding: 10px 20px 0px 20px;
 }
 
@@ -110,35 +111,72 @@ img {
 }
 
 .project {
+border: 10px ridge #bb6599;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 97%;
   background-color: white;
 
 
 
 }
 
+.projectImage {
+  position: relative;
+
+
+}
+
+.imageText {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+text-align: center;
+
+}
 
 
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .25s ease;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  background-color: #60495A;
 
+}
 
+.overlay:hover {
+	background-color: black;
+}
 
-
-
-
+.overlay:active {
+	position:relative;
+	top:1px;
+}
 
 
 .description {
   font-family: Work Sans;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
   color: black;
-  padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
+  padding: 0 20px 20px 20px;
+
 }
 
 
@@ -157,7 +195,7 @@ footer {
     align-content: center;
     padding: 10px 20px;
     color: white;
-      background-image: url('../images/project.jpg');
+    background-image: url('../images/project.jpg');
 
 
 }
@@ -176,5 +214,5 @@ footer {
   }
 }
 a {
-  color: #00b09b;
+  color: #bb6599;
 }
